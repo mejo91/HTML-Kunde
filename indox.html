@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <title>نموذج إدخال بيانات الموظفين</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>نموذج إدخال بيانات الموظف</h1>
+
+<form action="/submit" method="post">
+    <label for="name">الاسم الكامل:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="id">رقم الهوية:</label>
+    <input type="text" id="id" name="id" required />
+
+    <label for="department">القسم:</label>
+    <input type="text" id="department" name="department" required />
+
+    <label for="position">الوظيفة:</label>
+    <input type="text" id="position" name="position" required />
+
+    <label for="salary">الراتب:</label>
+    <input type="number" id="salary" name="salary" required />
+
+    <label for="hire_date">تاريخ التوظيف:</label>
+    <input type="date" id="hire_date" name="hire_date" required />
+
+    <button type="submit">إرسال البيانات</button>
+</form>
+
+</body>
+</html>
